@@ -1,0 +1,44 @@
+<div class="header">
+  <h1>TimeHustle</h1>
+  <div class="navbar">
+    <ul class="navbar-item1">
+      <li>
+        <button><span>How It Works</span></button>
+      </li>
+      <li>
+        <button><span>Testimonials</span></button>
+      </li>
+      <li>
+        <button><span>FAQ</span></button>
+      </li>
+    </ul>
+    <div class="verticalDivider"></div>
+    <ul class="navbar-item2">
+      <li>
+        <button><span>Log in</span></button>
+      </li>
+      <li>
+        <button><span>Sign up</span></button>
+      </li>
+    </ul>
+  </div>
+  <div class="menuIcon">
+    @if (isDrawerHidden) {
+      <button (click)="toggleNavbarDrawer($event)">Menu</button>
+    } @else {
+      <button (click)="toggleNavbarDrawer($event)">Menuback</button>
+    }
+  </div>
+</div>
+<div class="navbarDrawer" [class.isVisible]="isDrawerHidden">
+  <div class="navbarDrawer__verticalList">
+    <button><span>List 1</span></button>
+    <button><span>List 2</span></button>
+    <button><span>List 3</span></button>
+  </div>
+  <div class="horizontalDivider"></div>
+  <div class="navbarDrawer__horizontalList">
+    <button><span>Log in</span></button>
+    <button><span>Start for free</span></button>
+  </div>
+</div>
