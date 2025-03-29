@@ -1,7 +1,8 @@
+<div class="header__container">
 <div class="header">
   <h1>TimeHustle</h1>
   <div class="navbar">
-    <ul class="navbar-item1">
+    <ul class="navbar__item">
       <li>
         <button><span>How It Works</span></button>
       </li>
@@ -12,32 +13,33 @@
         <button><span>FAQ</span></button>
       </li>
     </ul>
-    <div class="verticalDivider"></div>
-    <ul class="navbar-item2">
+    <div class="vertical-divider"></div>
+    <ul class="navbar__item">
       <li>
         <button><span>Log in</span></button>
       </li>
       <li>
-        <button><span>Sign up</span></button>
+        <button><span>Start for free</span></button>
       </li>
     </ul>
   </div>
-  <div class="menuIcon">
+  <div class="menu-icon">
     @if (isDrawerHidden) {
-      <button (click)="toggleNavbarDrawer($event)">Menu</button>
+      <button (click)="toggleNavbarDrawer($event)"><span>Menu</span></button>
     } @else {
-      <button (click)="toggleNavbarDrawer($event)">Menuback</button>
+      <button (click)="toggleNavbarDrawer($event)"><span>Menuback</span></button>
     }
   </div>
 </div>
-<div class="navbarDrawer" [class.isVisible]="isDrawerHidden">
-  <div class="navbarDrawer__verticalList">
+</div>
+<div class="navbar__drawer" [class.is-hidden]="isDrawerHidden">
+  <div class="navbar__drawer__vertical-list">
     <button><span>List 1</span></button>
     <button><span>List 2</span></button>
     <button><span>List 3</span></button>
   </div>
-  <div class="horizontalDivider"></div>
-  <div class="navbarDrawer__horizontalList">
+  <div class="horizontal-divider"></div>
+  <div class="navbar__drawer__horizontal-list">
     <button><span>Log in</span></button>
     <button><span>Start for free</span></button>
   </div>

@@ -1,16 +1,23 @@
+.header__container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: rgb(81, 154, 81);
+}
+
 .header {
   height: 72px;
+  max-width: 1312px;
   width: 100%;
   display: flex;
   justify-content: space-between;
-  background-color: rgb(81, 154, 81);
   align-items: center;
-  padding: 0 3vw;
   box-sizing: border-box;
+  padding: 0 24px;
 }
 
 .header h1 {
-  font-size: 2.3vw;
+  font-size: min(2.3vw, 40px);
   font-weight: 700;
 }
 
@@ -25,8 +32,7 @@
   margin: 0 2.6px;
 }
 
-.navbar-item1,
-.navbar-item2 {
+.navbar__item {
   display: flex;
   align-items: center;
   gap: 2px;
@@ -39,11 +45,10 @@ button {
   padding: 8px 14px;
   box-sizing: border-box;
   border: none;
-  background-color: greenyellow;
 }
 
 button:hover {
-  background-color: #f2f2f2;
+  background-color: greenyellow;
 }
 
 ul {
@@ -57,63 +62,64 @@ span {
   display: block;
 }
 
-.verticalDivider {
+.vertical-divider {
   width: 1px;
   background-color: #ccc;
   height: 24px;
+  margin: 0 6px;
 }
 
-.menuIcon {
+.menu-icon {
   display: none;
 }
 
-.navbarDrawer {
+.navbar__drawer {
   display: flex;
   flex-direction: column;
   padding: 5% 5%;
   background-color: #b6f5cc;
 }
 
-.horizontalDivider {
+.horizontal-divider {
   height: 1px;
   background-color: #010101;
   width: auto;
   flex-shrink: 0;
 }
 
-.navbarDrawer button {
+.navbar__drawer button {
   padding: 10px 18px;
 }
 
-.navbarDrawer__verticalList {
+.navbar__drawer__vertical-list {
   display: flex;
   flex-direction: column;
 }
 
-.navbarDrawer__verticalList button {
+.navbar__drawer__vertical-list button {
   text-align: left;
   margin: 10px 0px;
 }
 
-.navbarDrawer__verticalList button span {
+.navbar__drawer__vertical-list button span {
   text-align: left;
 }
 
-.navbarDrawer__horizontalList {
+.navbar__drawer__horizontal-list {
   display: flex;
   justify-content: space-around;
 }
 
-.navbarDrawer__horizontalList button {
+.navbar__drawer__horizontal-list button {
   flex: 1 1 50%;
   margin: 10px 0px;
 }
 
-.navbarDrawer__horizontalList button:first-child {
+.navbar__drawer__horizontal-list button:first-child {
   margin-right: 12px;
 }
 
-.isVisible {
+.is-hidden {
   display: none;
 }
 
@@ -122,13 +128,12 @@ span {
     display: none;
   }
 
-  .menuIcon {
+  .menu-icon {
     display: inline-block;
   }
 }
 
 @media (max-width: 600px) {
-
   .header h1 {
     font-size: 5vw;
   }
