@@ -1,25 +1,27 @@
-div {
-  background-color: rgb(81, 154, 81);
-}
-
 .header {
   height: 72px;
   display: flex;
   justify-content: space-between;
-  padding: 0px 106px;
+  padding: 0px var(--padding-landing-page);
+  background-color: rgb(81, 154, 81);
   align-items: center;
 }
 
 .navbar {
-display: flex;
-align-items: center;
-gap: 0px 2px;
+  display: flex;
+  align-items: center;
+  gap: 0px 2px;
 }
 
-.navbar-item1, .navbar-item2 {
-display: flex;
-align-items: center;
-gap: 2px;
+.navbar button{
+  margin-left: 5px;
+}
+
+.navbar-item1,
+.navbar-item2 {
+  display: flex;
+  align-items: center;
+  gap: 2px;
 }
 
 button {
@@ -29,6 +31,7 @@ button {
   padding: 8px 14px;
   box-sizing: border-box;
   border: none;
+  background-color: greenyellow;
 }
 
 button:hover {
@@ -42,32 +45,77 @@ ul {
 
 span {
   text-align: center;
-  font-size: 18px;
+  font-size: 16px;
   display: block;
 }
 
-.divider {
-width: 1px;
-background-color: #ccc;
-height: 24px;
-margin: 0px 8px;
+.verticalDivider {
+  width: 1px;
+  background-color: #ccc;
+  height: 24px;
+  margin: 0px 8px;
 }
 
-.sidebar-item1, .sidebar-item2 {
-position: fixed;
-top: 0;
-right: 0;
-height: 100vh;
-width: 250px;
-z-index: 999;
-background-color: white;
-box-shadow: -10px 0 10px rgba(0,0,0,0.1);
-display: flex;
-flex-direction: column;
-align-items: flex-start;
-justify-content: flex-start;
+.menuIcon {
+  display: none;
 }
 
-.sidebar-item1 li {
-width: 100%;
+.navbarDrawer {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 26px;
+  background-color: #b6f5cc;
+}
+
+.horizontalDivider {
+  height: 1px;
+  background-color: #010101;
+  width: auto;
+  flex-shrink: 0;
+}
+
+.navbarDrawer button {
+  padding: 10px 18px;
+}
+
+.navbarDrawer__verticalList {
+  display: flex;
+  flex-direction: column;
+}
+
+.navbarDrawer__verticalList button {
+  text-align: left;
+  margin: 10px 0px;
+}
+
+.navbarDrawer__verticalList button span {
+  text-align: left;
+}
+
+.navbarDrawer__horizontalList {
+  display: flex;
+  justify-content: space-around;
+}
+
+.navbarDrawer__horizontalList button {
+  flex: 1 1 50%;
+  margin: 10px 0px;
+}
+
+.navbarDrawer__horizontalList button:first-child {
+  margin-right: 12px;
+}
+
+.isVisible {
+  display: none;
+}
+
+@media screen and (max-width: 926px) {
+  .navbar {
+    display: none;
+  }
+
+  .menuIcon {
+    display: inline-block;
+  }
 }
