@@ -83,6 +83,10 @@ span {
   flex-direction: column;
   padding: 5% 5%;
   background-color: #b6f5cc;
+  position: fixed;
+  top: 72px;
+  z-index: 1000;
+  width: 100%;
 }
 
 .horizontal-divider {

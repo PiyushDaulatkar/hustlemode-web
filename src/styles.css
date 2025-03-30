@@ -7,3 +7,7 @@ body {
 :root {
   --padding-landing-page: 40px;
 }
+
+.no-scroll {
+  overflow: hidden;
+}

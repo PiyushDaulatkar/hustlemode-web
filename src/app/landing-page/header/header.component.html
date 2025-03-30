@@ -25,9 +25,9 @@
   </div>
   <div class="menu-icon">
     @if (isDrawerHidden) {
-      <button (click)="toggleNavbarDrawer($event)"><span>Menu</span></button>
+      <button (click)="toggleNavbarDrawer()"><span>Menu</span></button>
     } @else {
-      <button (click)="toggleNavbarDrawer($event)"><span>Menuback</span></button>
+      <button (click)="toggleNavbarDrawer()"><span>Menuback</span></button>
     }
   </div>
 </div>
@@ -44,3 +44,4 @@
     <button><span>Start for free</span></button>
   </div>
 </div>
+<div class="blur-block"></div>
