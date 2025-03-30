@@ -14,6 +14,11 @@
   align-items: center;
   box-sizing: border-box;
   padding: 0 24px;
+  position: fixed;
+  z-index: 1000;
+  background-color: white;
+  top: 0;
+  left: 0;
 }
 
 .header h1 {
@@ -78,6 +83,10 @@ span {
   flex-direction: column;
   padding: 5% 5%;
   background-color: #b6f5cc;
+  position: fixed;
+  top: 72px;
+  z-index: 1000;
+  width: 100%;
 }
 
 .horizontal-divider {
@@ -140,5 +149,11 @@ span {
 
   span {
     font-size: 3vw;
+  }
+}
+
+@media (max-width: 772px) {
+  .header {
+    border-bottom: 1px solid grey;
   }
 }

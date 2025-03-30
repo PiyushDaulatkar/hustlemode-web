@@ -1,4 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, DestroyRef, inject, OnInit, output } from '@angular/core';
+
+import { ResponsiveService } from '../../services/responsive.service';
 
 @Component({
   selector: 'app-header',
@@ -7,10 +9,29 @@ import { Component } from '@angular/core';
   templateUrl: './header.component.html',
   styleUrl: './header.component.css',
 })
-export class HeaderComponent {
+export class HeaderComponent implements OnInit {
   isDrawerHidden: boolean = true;
+  drawerState = output<boolean>();
+  private readonly responsiveService = inject(ResponsiveService);
+  private readonly destroyRef = inject(DestroyRef);
 
-  toggleNavbarDrawer(event: Event) {
+  ngOnInit(): void {
+    const subscription = this.responsiveService.screenWidth$.subscribe(
+      (screenWidth) => {
+        if (screenWidth?.breakpoints['(min-width: 956px)']) {
+          this.isDrawerHidden = true;
+          this.drawerState.emit(this.isDrawerHidden);
+        }
+      }
+    );
+
+    this.destroyRef.onDestroy(() => {
+      subscription.unsubscribe();
+    });
+  }
+
+  toggleNavbarDrawer() {
     this.isDrawerHidden = !this.isDrawerHidden;
+    this.drawerState.emit(this.isDrawerHidden);
   }
 }

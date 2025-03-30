@@ -1,2 +1,4 @@
-<app-header/>
+<app-header (drawerState)="toggleBlurLandingPage($event)" />
+<div  [class.blur]="isBlurActive">
 <app-hero-banner/>
+</div>

@@ -1,8 +1,13 @@
 /* You can add global styles to this file, and also import other style files */
 body {
   margin: 0;
+  padding-top: 72px;
 }
 
 :root {
   --padding-landing-page: 40px;
+}
+
+.no-scroll {
+  overflow: hidden;
 }
