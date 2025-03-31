@@ -27,11 +27,10 @@ img {
 .hero {
   position: relative;
   display: flex;
-  margin: 70px auto;
+  margin: 106px 8vw;
   justify-content: space-around;
   max-height: 382px;
   max-width: 1256px;
-  padding: 0 52px;
 }
 
 .hero__details {
@@ -39,6 +38,7 @@ img {
   flex-direction: column;
   position: relative;
   max-width: 470px;
+  margin-right: 10px;
 }
 
 .hero__details__reviews {
@@ -71,12 +71,13 @@ img {
     max-height: 1382px;
     text-align: center;
     height: auto;
-    margin-top: 50px;
-    padding: 0px 40px;
+    margin: 50px 0 0 0;
+    padding: 0px 26px;
   }
 
   .hero__details {
     align-items: center;
+    margin-right: 0;
   }
 
   button {
