@@ -2,23 +2,22 @@
   width: 100%;
   display: flex;
   justify-content: center;
-  background-color: rgb(81, 154, 81);
+  top: 0;
+  left: 0;
+  position: fixed;
+  z-index: 1000;
+  background-color: white;
 }
 
 .header {
   height: 72px;
-  max-width: 1312px;
   width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
   box-sizing: border-box;
-  padding: 0 24px;
-  position: fixed;
-  z-index: 1000;
-  background-color: white;
-  top: 0;
-  left: 0;
+  max-width: 1256px;
+  margin: 0 4.2vw;
 }
 
 .header h1 {
@@ -132,6 +131,16 @@ span {
   display: none;
 }
 
+@media (max-width: 1120px) {
+  .header {
+    padding: 0px 5vw;
+  }
+
+  h1 {
+    margin-left: 0.6vw;
+  }
+}
+
 @media (max-width: 956px) {
   .navbar {
     display: none;
@@ -153,7 +162,7 @@ span {
 }
 
 @media (max-width: 772px) {
-  .header {
+  .header__container {
     border-bottom: 1px solid grey;
   }
 }
