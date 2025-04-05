@@ -1,7 +1,7 @@
 .container {
   display: flex;
-  justify-content: center;
   flex-direction: column;
+  align-items: center;
 }
 
 .blur {
@@ -18,4 +18,11 @@
   background-color: rgba(128, 128, 128, 0.5);
   pointer-events: none;
   overflow: hidden;
+}
+
+.divider {
+  width: calc(100% - 12vw);
+  height: 1px;
+  background-color: #ccc;
+  margin: 0px 6vw 50px 6vw;
 }
