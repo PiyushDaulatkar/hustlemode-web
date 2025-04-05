@@ -73,6 +73,12 @@
     display: none;
   }
 
+  .showcase-list-item {
+    overflow: hidden;
+    height: auto;
+    padding-bottom: 80px;
+  }
+
   .mobile-img {
     display: block;
     width: 100%;
@@ -81,9 +87,9 @@
     object-fit: cover;
   }
 
-  .showcase-list-item {
-    height: auto;
-    max-width: 100%;
-    margin-bottom: clamp(40px, 19.2vw, 72px);
+  .scrolling div:last-child {
+    height: 100%;
+    padding-bottom: 0px;
   }
+
 }

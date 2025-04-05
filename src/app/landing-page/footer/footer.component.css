@@ -33,12 +33,13 @@ a:hover {
 
 .footer__top {
   max-width: 350px;
+  box-sizing: border-box;
 }
 
 .footer__links {
   display: flex;
   justify-content: space-between;
-  gap: 40px;
+  gap: clamp(16px, 4vw, 40px);
 }
 
 .links-column {
@@ -52,8 +53,48 @@ a:hover {
   gap: 8px;
 }
 
+.divider {
+  display: none;
+}
+
 @media (max-width: 1024px) {
   .your-class {
     gap: clamp(16px, 4vw, 40px);
+  }
+}
+
+@media (max-width: 776px) {
+  .footer {
+    flex-direction: column;
+    align-items: flex-start;
+    margin: clamp(5px, 8vw, 20px);
+  }
+
+  .footer__links {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  a {
+    width: 100%;
+    padding: 4px auto;
+  }
+
+  .icons {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-around;
+  }
+
+  .icons a:last-child {
+    padding-right: 0px;
+  }
+
+  .divider {
+    display: block;
+    height: 1px;
+    width: auto;
+    background-color: #ccc;
   }
 }
