@@ -17,11 +17,11 @@
   align-items: center;
   box-sizing: border-box;
   max-width: 1256px;
-  margin: 0 4.2vw;
+  margin: 0 6vw;
 }
 
 .header h1 {
-  font-size: min(2.3vw, 40px);
+  font-size: clamp(24px, 4vw, 40px);
   font-weight: 700;
 }
 
@@ -29,7 +29,6 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 0px 2px;
 }
 
 .navbar button {
@@ -46,7 +45,7 @@ button {
   background-color: transparent;
   border-radius: 8px;
   font-weight: 400;
-  padding: 8px 14px;
+  padding: 8px clamp(8px, 2.5vw, 10px);
   box-sizing: border-box;
   border: none;
 }
@@ -129,6 +128,10 @@ span {
 
 .is-hidden {
   display: none;
+}
+
+.last-button {
+  padding-right: 0px;
 }
 
 @media (max-width: 1120px) {

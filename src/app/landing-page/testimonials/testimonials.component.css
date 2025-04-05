@@ -1,5 +1,5 @@
 p {
-  font-size: 20px;
+  font-size: clamp(16px, 1.47vw, 22px);
   display: block;
   width: 270px;
 }
