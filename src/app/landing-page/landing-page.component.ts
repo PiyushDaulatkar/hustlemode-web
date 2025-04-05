@@ -3,11 +3,12 @@ import { Component, OnInit } from '@angular/core';
 import { HeaderComponent } from './header/header.component';
 import { HeroBannerComponent } from './hero-banner/hero-banner.component';
 import { TestimonialsComponent } from "./testimonials/testimonials.component";
+import { FeaturesShowcaseComponent } from "./features-showcase/features-showcase.component";
 
 @Component({
   selector: 'app-landing-page',
   standalone: true,
-  imports: [HeaderComponent, HeroBannerComponent, TestimonialsComponent],
+  imports: [HeaderComponent, HeroBannerComponent, TestimonialsComponent, FeaturesShowcaseComponent],
   templateUrl: './landing-page.component.html',
   styleUrl: './landing-page.component.css',
 })

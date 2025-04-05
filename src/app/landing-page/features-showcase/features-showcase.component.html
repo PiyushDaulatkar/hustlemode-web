@@ -1,0 +1,20 @@
+<div class="outer-wrapper">
+<div class="showcase-container">
+  <div class="scrolling">
+    @for ( item of showCaseItem; track item.image) {
+    <div class="showcase-list-item">
+      <p>{{ item.label }}</p>
+      <p>{{ item.label }}</p>
+      <p>{{ item.description }}</p>
+      @if (item.link) {
+      <p>{{ item.linkText }}</p>
+      }
+      <img [src]="item.image" alt="" class="mobile-img" />
+    </div>
+    }
+  </div>
+  <div class="static">
+    <img [src]="currentImage" alt="" />
+  </div>
+</div>
+</div>

@@ -80,3 +80,9 @@ p {
     width: auto;
   }
 }
+
+@media (max-width: 772px) {
+  .testimonials_container {
+  margin-bottom: 100px;
+  }
+}
