@@ -1,0 +1,46 @@
+<app-header />
+<div class="center">
+  <div class="register">
+    <h2>Sign up</h2>
+    <div class="external-register">
+      <a href="">Continue with Google</a>
+      <a href="">Continue with Facebook</a>
+      <a href="">Continue with Apple</a>
+    </div>
+    <form (ngSubmit)="OnSubmit()">
+      <div>
+        <label for="email">Email</label>
+        <input
+          id="email"
+          type="text"
+          placeholder="Enter your personal or work email..."
+        />
+      </div>
+      <div>
+        <label for="password">Password</label>
+        <div class="password-container">
+          <input
+            id="password"
+            [type]="showPassword ? 'true' : 'password'"
+            placeholder="Enter your password..."
+          />
+          <span class="material-symbols-outlined" (click)="togglePasswordVisibility()">
+            {{ showPassword ? 'visibility' : 'visibility_off' }}
+          </span>
+        </div>
+      </div>
+      <button>Sign up with Email</button>
+    </form>
+    <div class="agree">
+      By continuing with Google, Apple, or Email, you agree to Timehustle’s
+      <a href="">Terms of Service</a> and <a href="">Privacy Policy</a>.
+    </div>
+    <div class="login">Already signed up? <a href="">Go to login</a></div>
+  </div>
+  <div class="images">
+    <img src="1.jpg" alt="" />
+    <img src="1.jpg" alt="" />
+    <img src="1.jpg" alt="" />
+    <img src="1.jpg" alt="" />
+  </div>
+</div>
