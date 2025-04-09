@@ -24,4 +24,28 @@ export class AppComponent {
     let b = 2;
     return a + b;
   }
+
+  methodf() {
+    let a = 1;
+    let b = 2;
+    return a + b;
+  }
+
+  methodc() {
+    let a = 1;
+    let b = 2;
+    return a + b;
+  }
+
+  methodd() {
+    let a = 1;
+    let b = 2;
+    return a + b;
+  }
+
+  methode() {
+    let a = 1;
+    let b = 2;
+    return a + b;
+  }
 }
