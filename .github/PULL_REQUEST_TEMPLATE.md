@@ -20,7 +20,7 @@
 - **Test coverage:** 
   <!-- Mention if you wrote tests or ran existing tests -->
   - [ ] I have added tests to cover my changes.
-  - [ ] I have run `ng test` and all tests are passing.
+  - [ ] I have run `npm run test` and all tests are passing.
 
 ---
 
