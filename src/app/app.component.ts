@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { CanActivateChildFn } from '@angular/router';
 
 import { RouterOutlet } from '@angular/router';
 
@@ -9,4 +10,18 @@ import { RouterOutlet } from '@angular/router';
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
 })
-export class AppComponent {}
+export class AppComponent {
+  constructor() {}
+
+  methodA() {
+    let a = 1;
+    let b = 2;
+    return a + b;
+  }
+
+  methodB() {
+    let a = 1;
+    let b = 2;
+    return a + b;
+  }
+}
