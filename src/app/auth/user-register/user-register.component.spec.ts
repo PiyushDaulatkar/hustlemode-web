@@ -20,4 +20,12 @@ describe('UserRegisterComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+
+  it('should toggle password visibility', () => {
+    expect(component.showPassword).toBe(false);
+    component.togglePasswordVisibility();
+    expect(component.showPassword).toBe(true);
+    component.togglePasswordVisibility();
+    expect(component.showPassword).toBe(false);
+  });
 });
