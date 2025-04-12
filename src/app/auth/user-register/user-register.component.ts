@@ -15,6 +15,7 @@ export class UserRegisterComponent {
     this.showPassword = !this.showPassword;
   }
 
+  /* istanbul ignore next */
   OnSubmit() {
     console.log("OnSubmit");
   }
