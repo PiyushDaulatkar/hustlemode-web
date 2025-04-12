@@ -21,3 +21,23 @@ describe('LoginComponent', () => {
     expect(component).toBeTruthy();
   });
 });
+
+describe('TestComponent', () => {
+  let component: LoginComponent;
+
+  beforeEach(() => {
+    component = new LoginComponent();
+  });
+
+  it('should return even low code', () => {
+    expect(component.checkStatus(10)).toBe('Even low code');
+  });
+
+  it('should calculate discounted price', () => {
+    expect(component.calculatePrice(1200)).toBe(1080);
+  });
+
+  it('should apply discount', () => {
+    expect(component.applyDiscount(1200)).toBe(1080);
+  });
+})

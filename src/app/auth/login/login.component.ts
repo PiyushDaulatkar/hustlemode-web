@@ -8,9 +8,6 @@ import { Component } from '@angular/core';
   styleUrl: './login.component.css'
 })
 export class LoginComponent {
-  getStringLength(str: string | null): number {
-    return str.length; // Will throw if str is null
-  }
 
   // 🧼 Code smell: deep nesting
   checkStatus(code: number): string {
