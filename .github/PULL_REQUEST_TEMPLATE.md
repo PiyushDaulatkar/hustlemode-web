@@ -17,10 +17,8 @@
 ### Testing:
 - **Tested by:** 
   <!-- Describe how you tested the changes -->
-- **Test coverage:** 
-  <!-- Mention if you wrote tests or ran existing tests -->
-  - [ ] I have added tests to cover my changes.
-  - [ ] I have run `ng test` and all tests are passing.
+- [ ] I have added tests to cover my changes.
+- [ ] I have run `ng test` and all tests are passing.
 
 ---
 
@@ -29,7 +27,6 @@
 - [ ] I have updated the documentation (if applicable).
 - [ ] I have added new tests (if applicable).
 - [ ] I have run `ng serve` to check that the app works as expected locally.
-- [ ] My changes do not break the build.
 
 ---
 

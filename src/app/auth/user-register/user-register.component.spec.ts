@@ -20,4 +20,18 @@ describe('UserRegisterComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+
+  it('should toggle password visibility', () => {
+    expect(component.showPassword).toBe(false);
+    component.togglePasswordVisibility();
+    expect(component.showPassword).toBe(true);
+    component.togglePasswordVisibility();
+    expect(component.showPassword).toBe(false);
+  });
+
+  it('should log "OnSubmit" when OnSubmit is called', () => {
+    const consoleSpy = jest.spyOn(console, 'log');
+    component.OnSubmit();
+    expect(consoleSpy).toHaveBeenCalledWith('OnSubmit');
+  });
 });
