@@ -1,5 +1,9 @@
 # HustlemodeWeb
 
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=PiyushDaulatkar_hustlemode-web&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=PiyushDaulatkar_hustlemode-web)
+[![Quality gate](https://sonarcloud.io/api/project_badges/quality_gate?project=PiyushDaulatkar_hustlemode-web)](https://sonarcloud.io/summary/new_code?id=PiyushDaulatkar_hustlemode-web)
+[![SonarQube Cloud](https://sonarcloud.io/images/project_badges/sonarcloud-light.svg)](https://sonarcloud.io/summary/new_code?id=PiyushDaulatkar_hustlemode-web)
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.15.
 
 ## Development server
