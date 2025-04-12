@@ -14,7 +14,7 @@ import { FooterComponent } from "./footer/footer.component";
   styleUrl: './landing-page.component.css',
 })
 export class LandingPageComponent implements OnInit {
-  isBlurActive: boolean = false;
+  isBlurActive = false;
   bodyElement: HTMLBodyElement | null = null;
 
   ngOnInit(): void {
