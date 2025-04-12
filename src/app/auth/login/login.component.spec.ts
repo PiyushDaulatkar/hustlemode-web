@@ -34,7 +34,7 @@ describe('TestComponent', () => {
   });
 
   it('should calculate discounted price', () => {
-    expect(component.calculatePrice(1200)).toBe(108);
+    expect(component.calculatePrice(1200)).toBe(1080);
   });
 
   it('should apply discount', () => {
