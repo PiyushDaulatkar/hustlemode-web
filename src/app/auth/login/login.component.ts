@@ -38,9 +38,9 @@ export class LoginComponent {
   }
 
   // 🔐 Security hotspot: eval
-  executeCode(code: string): void {
-    eval(code); // Dangerous!
-  }
+  // executeCode(code: string): void {
+  //   eval(code); // Dangerous!
+  // }
 
   // 📊 Not tested method (for coverage)
   // notTested(x: number): number {
