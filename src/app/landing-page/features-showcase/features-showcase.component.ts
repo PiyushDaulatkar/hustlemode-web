@@ -14,7 +14,7 @@ export class FeaturesShowcaseComponent {
   currentImage = '1.jpg';
 
   @HostListener('window:scroll', ['$event'])
-  onWindowScroll(event: Event): void {
+  onWindowScroll(): void {
     const scrollTop = window.scrollY || document.documentElement.scrollTop;
     const sections = Array.from(
       document.querySelectorAll<HTMLElement>('.showcase-list-item')

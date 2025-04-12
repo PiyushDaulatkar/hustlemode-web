@@ -9,11 +9,13 @@ import { HeaderComponent } from '../../landing-page/header/header.component';
   styleUrl: './user-register.component.css',
 })
 export class UserRegisterComponent {
-  showPassword: boolean = false;
+  showPassword = false;
 
   togglePasswordVisibility() {
     this.showPassword = !this.showPassword;
   }
 
-  OnSubmit() {}
+  OnSubmit() {
+    console.log("OnSubmit");
+  }
 }

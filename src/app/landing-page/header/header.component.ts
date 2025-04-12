@@ -11,7 +11,7 @@ import { ResponsiveService } from '../../services/responsive.service';
   styleUrl: './header.component.css',
 })
 export class HeaderComponent implements OnInit {
-  isDrawerHidden: boolean = true;
+  isDrawerHidden = true;
   drawerState = output<boolean>();
   private readonly responsiveService = inject(ResponsiveService);
   private readonly destroyRef = inject(DestroyRef);

@@ -24,7 +24,12 @@
             [type]="showPassword ? 'true' : 'password'"
             placeholder="Enter your password..."
           />
-          <span class="material-symbols-outlined" (click)="togglePasswordVisibility()">
+          <span
+            class="material-symbols-outlined"
+            (click)="togglePasswordVisibility()"
+            (keydown.enter)="togglePasswordVisibility()"
+            tabindex="0"
+          >
             {{ showPassword ? 'visibility' : 'visibility_off' }}
           </span>
         </div>
