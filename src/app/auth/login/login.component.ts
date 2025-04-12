@@ -43,7 +43,7 @@ export class LoginComponent {
   }
 
   // 📊 Not tested method (for coverage)
-  notTested(x: number): number {
-    return x * 2;
-  }
+  // notTested(x: number): number {
+  //   return x * 2;
+  // }
 }
